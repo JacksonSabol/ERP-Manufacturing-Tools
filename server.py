@@ -19,7 +19,8 @@ try:
         record = cursor.fetchone()
         print("Currently connected to - ", record)
         cursor.execute("SELECT * FROM sales")
-        for row in cursor:
+        sales_entries = cursor.fetchall()
+        for row in sales_entries:
             print(row)
 
 except Error as e:

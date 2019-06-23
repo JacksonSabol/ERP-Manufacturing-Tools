@@ -6,4 +6,4 @@ VALUES
   ("LIDAR", 4321.00),
   ("Cabling", 333.33);
 
-  SELECT * FROM sales
+SELECT * FROM sales
